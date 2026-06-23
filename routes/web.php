@@ -22,11 +22,11 @@ Route::get('/about', [PageController::class, 'about'])->name('about');
 
 Route::get('/services', [PageController::class, 'services'])->name('services');
 
-Route::get('/services/{id}', [PageController::class, 'showService'])->name('services.show');
+Route::get('/services/{id}', [PageController::class, 'showService'])->name('frontend.services.show');
 
 Route::get('/articles', [PageController::class, 'articles'])->name('articles');
 
-Route::get('/articles/{id}', [PageController::class, 'showArticle'])->name('articles.show');
+Route::get('/articles/{id}', [PageController::class, 'showArticle'])->name('frontend.articles.show');
 
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 
